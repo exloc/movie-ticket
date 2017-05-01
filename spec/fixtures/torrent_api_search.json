@@ -1,0 +1,72 @@
+{
+  "torrent_results": [
+    {
+      "title": "A.Boy.and.His.Dog.1975.1080p.BluRay.H264.AAC-RARBG",
+      "category": "Movies\/x264\/1080",
+      "download": "magnet:?xt=urn:btih:8ae112bd9d2d277faeb79f887bd766a394a960ec&dn=A.Boy.and.His.Dog.1975.1080p.BluRay.H264.AAC-RARBG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710&tr=udp%3A%2F%2F9.rarbg.to%3A2710&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce",
+      "seeders": 2,
+      "leechers": 2,
+      "size": 1856723575,
+      "pubdate": "2016-03-24 08:06:00 +0000",
+      "episode_info": {
+        "imdb": "tt0072730",
+        "tvrage": null,
+        "tvdb": null,
+        "themoviedb": "4917"
+      },
+      "ranked": 1,
+      "info_page": "https:\/\/torrentapi.org\/redirect_to_info.php?token=gxy7od02pj&p=1_0_2_1_4_8_0__8ae112bd9d"
+    },
+    {
+      "title": "A.Boy.and.His.Dog.1975.1080p.BluRay.x264-AMIABLE",
+      "category": "Movies\/x264\/1080",
+      "download": "magnet:?xt=urn:btih:3a58bd8dcf712d7b683702cfbd5668fbf996d9d6&dn=A.Boy.and.His.Dog.1975.1080p.BluRay.x264-AMIABLE&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710&tr=udp%3A%2F%2F9.rarbg.to%3A2710&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce",
+      "seeders": 1,
+      "leechers": 0,
+      "size": 9388723472,
+      "pubdate": "2016-03-23 10:36:26 +0000",
+      "episode_info": {
+        "imdb": "tt0072730",
+        "tvrage": null,
+        "tvdb": null,
+        "themoviedb": "4917"
+      },
+      "ranked": 1,
+      "info_page": "https:\/\/torrentapi.org\/redirect_to_info.php?token=gxy7od02pj&p=1_0_2_0_9_7_1__3a58bd8dcf"
+    },
+    {
+      "title": "A.Boy.and.His.Dog.1975.BRRip.XviD.MP3-RARBG",
+      "category": "Movies\/XVID",
+      "download": "magnet:?xt=urn:btih:5167d4c193a62cc7ca51d4a7746c7410fd07eba3&dn=A.Boy.and.His.Dog.1975.BRRip.XviD.MP3-RARBG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710&tr=udp%3A%2F%2F9.rarbg.to%3A2710&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce",
+      "seeders": 0,
+      "leechers": 0,
+      "size": 1216949885,
+      "pubdate": "2016-03-23 13:01:57 +0000",
+      "episode_info": {
+        "imdb": "tt0072730",
+        "tvrage": null,
+        "tvdb": null,
+        "themoviedb": "4917"
+      },
+      "ranked": 1,
+      "info_page": "https:\/\/torrentapi.org\/redirect_to_info.php?token=gxy7od02pj&p=1_0_2_1_0_1_2__5167d4c193"
+    },
+    {
+      "title": "A.Boy.and.His.Dog.1975.720p.BluRay.H264.AAC-RARBG",
+      "category": "Movies\/x264\/720",
+      "download": "magnet:?xt=urn:btih:014533d119f4d2b10b3447752df5b190b5e265e6&dn=A.Boy.and.His.Dog.1975.720p.BluRay.H264.AAC-RARBG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710&tr=udp%3A%2F%2F9.rarbg.to%3A2710&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce",
+      "seeders": 0,
+      "leechers": 1,
+      "size": 1177344338,
+      "pubdate": "2016-03-24 08:05:54 +0000",
+      "episode_info": {
+        "imdb": "tt0072730",
+        "tvrage": null,
+        "tvdb": null,
+        "themoviedb": "4917"
+      },
+      "ranked": 1,
+      "info_page": "https:\/\/torrentapi.org\/redirect_to_info.php?token=gxy7od02pj&p=1_0_2_1_4_7_9__014533d119"
+    }
+  ]
+}

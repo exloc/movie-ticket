@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/torrent_api"
+
+query = ARGV.join(" ")
+results = TorrentAPI.new.search(query)  #; puts results
+
+watch_dir = ENV["WATCH_DIR"]  # read WATCH_DIR for torrent app from env
+magnet_link = results.first["download"]
+title = results.first["title"]  #; puts "title: #{title}"
+
+filename = File.join(watch_dir, "#{title}.magnet")  #; puts "filename: #{filename}"
+
+# output magnet_link to file
+File.open(filename, "wb") do |file|
+  file << magnet_link
+end
