@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require_relative "./../lib/movie_ticket"
-require "pry"
 
 query = ARGV.join(" ")
 
@@ -26,7 +25,8 @@ end
 full_path = [ENV["DOWNLOAD_DIR"], results.first["SubFileName"]]
 subtitles_filename = File.join(full_path)
 subtitles = Base64.decode64(data)
+gzip = Zlib::GzipReader.new(StringIO.new(subtitles))
 File.open(subtitles_filename, "wb") do |file|
-  file << subtitles
+  file << gzip.read
   puts "Subtitles written to: #{subtitles_filename}"
 end
