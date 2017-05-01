@@ -1,6 +1,6 @@
 {
-  "name": "RARBG API Integration and Testing",
-  "description": "Query the RARBG API in Ruby.",
+  "name": "Torrent API Integration and Testing",
+  "description": "Query the Torrent API in Ruby.",
   "scripts": {
     "setup": "gem install bundler && bundle install",
     "start": "./exe/movie_ticket <A Movie Title>",
