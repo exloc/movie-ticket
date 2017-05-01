@@ -10,6 +10,14 @@ RSpec.describe MovieTicket::SubtitlesAPI do
     end
   end
 
+  describe "#get_server_info" do
+    it "populates server_info" do
+      expect(api.server_info).to be_nil
+      api.get_server_info
+      expect(api.server_info).to_not be_nil
+    end
+  end
+
   describe "#logout" do
     before { api.send(:logout) }
 
