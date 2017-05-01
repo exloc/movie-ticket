@@ -1,6 +1,6 @@
 require "pry"
 require_relative "support/webmock"
-require_relative "../lib/torrent_api"
+require_relative "../lib/movie_ticket"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

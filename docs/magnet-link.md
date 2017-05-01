@@ -17,5 +17,4 @@ The "infohash" is the hash of the encoded info data.
 
 ## Resources
 
-* [How do BitTorrent magnet links work?
-](http://stackoverflow.com/a/22240583/2675670)
+* [How do BitTorrent magnet links work?](http://stackoverflow.com/a/22240583/2675670)

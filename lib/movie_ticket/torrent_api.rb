@@ -1,9 +1,7 @@
-require "dotenv"
-Dotenv.load
 require "json"
 require "net/http"
 
-class TorrentAPI
+class MovieTicket::TorrentAPI
   attr_reader :app_id, :token
 
   HOST = "torrentapi.org"

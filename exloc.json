@@ -1,0 +1,22 @@
+{
+  "name": "RARBG API Integration and Testing",
+  "description": "Query the RARBG API in Ruby.",
+  "scripts": {
+    "setup": "gem install bundler && bundle install",
+    "start": "./exe/movie_ticket <A Movie Title>",
+    "test": "rake"
+  },
+  "dependencies": {
+    "ruby": "2.4.1",
+    "rspec": "3.5",
+    "webmock": "3.0.1"
+  },
+  "files": [
+    "./lib/torrent_api.rb",
+    "./spec/lib/torrent_api_spec.rb",
+    "./spec/spec_helper.rb",
+    "./spec/support/webmock.rb",
+    "./spec/fixtures/torrent_api_search.json"
+  ],
+  "license": "MIT"
+}

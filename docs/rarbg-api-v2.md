@@ -1,7 +1,5 @@
 # RARBG API v2
 
-[source](https://rarbg.to/pubapi/apidocs_v2.txt)
-
 * JSON response, by default
 * Include `app_id=app-name` in requests
 
@@ -54,6 +52,8 @@ RESPONSE: {
 ```
 
 ## Original Document
+
+[source](https://rarbg.to/pubapi/apidocs_v2.txt)
 
 When querying the api please use the app_id parameter with your app name so we can generate statistics for it.
 All responses are in json by default.

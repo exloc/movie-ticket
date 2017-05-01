@@ -1,6 +1,6 @@
 # Movie Ticket
 
-Query rarbg API for torrents.
+Query rarbg API for torrents. Query opensubtitles for corresponding subtitles.
 
 * [x] query api for movie torrents
 * [x] download torrent to watch directory
@@ -11,10 +11,20 @@ Query rarbg API for torrents.
 
 ## Usage
 
-```no-highlight
-$ git clone movie-ticket-cli
+```bash
+$ git clone movie-ticket-cli  # clone it
 $ cd movie-ticket-cli
-$ bundle
-$ echo 'WATCH_DIR="/Users/username/torrents"' > .env
+
+$ bundle  # download dependencies
+
+# configuration: location your torrent client looks for .torrent/.magnet files
+$ echo 'export WATCH_DIR=/Users/username/torrents' > .env
+
+# configuration: location to store your subtitles
+$ echo 'export DOWNLOAD_DIR=/Users/username/Downloads' >> .env
+
+$ source .env  # load config
+
+# retrieve first magnet link that matches the search query (sorted by seeders, desc)
 $ ./exe/movie_ticket Holy Mountain
 ```

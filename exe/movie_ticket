@@ -1,17 +1,32 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/torrent_api"
+require_relative "./../lib/movie_ticket"
+require "pry"
 
 query = ARGV.join(" ")
-results = TorrentAPI.new.search(query)  #; puts results
 
-watch_dir = ENV["WATCH_DIR"]  # read WATCH_DIR for torrent app from env
+# get torrent
+results = MovieTicket::TorrentAPI.new.search(query)
 magnet_link = results.first["download"]
-title = results.first["title"]  #; puts "title: #{title}"
-
-filename = File.join(watch_dir, "#{title}.magnet")  #; puts "filename: #{filename}"
-
-# output magnet_link to file
-File.open(filename, "wb") do |file|
+title = results.first["title"]
+magnet_filename = File.join(ENV["WATCH_DIR"], "#{title}.magnet")
+File.open(magnet_filename, "wb") do |file|
   file << magnet_link
+  puts "Magnet file written to: #{magnet_filename}"
+end
+
+# get subtitles
+results = nil
+data = nil
+MovieTicket::SubtitlesAPI.connection do |api|
+  results = api.search(title)
+  data = api.download(results.first["IDSubtitleFile"])
+end
+
+full_path = [ENV["DOWNLOAD_DIR"], results.first["SubFileName"]]
+subtitles_filename = File.join(full_path)
+subtitles = Base64.decode64(data)
+File.open(subtitles_filename, "wb") do |file|
+  file << subtitles
+  puts "Subtitles written to: #{subtitles_filename}"
 end

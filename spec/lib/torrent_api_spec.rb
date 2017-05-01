@@ -1,11 +1,11 @@
-RSpec.describe TorrentAPI do
+RSpec.describe MovieTicket::TorrentAPI do
   let(:app_name) { "movie-ticket-cli-test" }
-  let(:api) { TorrentAPI.new(app_name) }
+  let(:api) { MovieTicket::TorrentAPI.new(app_name) }
 
   describe "#api_token" do
     it "retrieves a token from the API" do
       expect(api.token).to be_nil
-      api.send(:api_token)
+      api.send(:api_token)  # call private method
       expect(api.token).to eq("abcde12345")
     end
   end
